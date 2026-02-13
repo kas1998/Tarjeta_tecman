@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa Tecman 🚀</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <img src="assets/logo_tecman.jpg" id="floatingLogo" class="floating-logo" alt="Tecman Logo">
+
+    <div class="container">
+        <div id="photoStep" class="step-hidden">
+            <img src="assets/meme.jpg" alt="Nuestro Equipo" class="team-photo">
+            <button class="btn" onclick="showFinalMessage()">Ver mensaje especial ❤️</button>
+        </div>
+
+        <div class="card" id="finalCard">
+            <div class="content">
+                <h1>¡Misión Cumplida! 🏆</h1>
+                <p>Tantos años de universidad y noches de estudio... ¡para terminar programando este botón que crece! 😂</p>
+                <p>Pero valió la pena si es para decirles que son un equipo increíble.</p>
+                <hr>
+                <p><strong>¡Feliz Día de la Amistad, compañeras! 🚀</strong></p>
+            </div>
+        </div>
+        
+        <button id="mainBtn" class="btn" onclick="handleInitialClicks()">¡Tengo una sorpresa! 🎁</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

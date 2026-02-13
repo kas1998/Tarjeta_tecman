@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(135deg, #600499 0%, #957f9c 100%); /* Colores Tecman sugeridos */
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGO FLOTANTE */
+.floating-logo {
+    position: absolute;
+    width: 200px;
+    z-index: -1; /* Detrás del contenido */
+    opacity: 9;
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+}
+
+/* FOTO Y TARJETA */
+.step-hidden { display: none; }
+
+.team-photo {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    animation: fadeIn 0.8s ease;
+}
+
+.card {
+    background: rgb(234, 224, 232);
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    display: none;
+    max-width: 400px;
+}
+
+.content { padding: 30px; color: #5a2020; }
+
+/* BOTÓN */
+.btn {
+    padding: 15px 30px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
